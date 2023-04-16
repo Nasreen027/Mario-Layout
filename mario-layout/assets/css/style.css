@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    font-family: var(--font-family);
+}
+:root{
+    --red : #f63232;
+    --white : #ffffff;
+    --mustard : #feb614;
+    --nav-bg : #f4f4f4;
+    --li-color : #a0a6b4;
+    --li-nth-child : #f64f6f;
+    --heading-2: #f64347;
+    --paragraph1 : #55585a;
+    --paragraph2 : #afb6c4;
+    --footer-h3 : #4b4b4b;
+    --font-family : Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+#sub-header{
+    background-color: var(--red);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#logo{
+    color: var(--white) ;
+    border: 0.3rem solid var(--white);
+    border-radius: 2rem;
+    width: 15%;
+    height: 1.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    font-weight: 1000;
+    /* font-size: 16px; */
+    position: absolute;
+    top: 0.6rem;
+}
+#section-one-image{
+    background-image: url("../images/banner.png");
+    height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#section-one-text{
+    height: 7.5rem;
+    width: 47%;
+    background-color: var(--mustard);
+    color: var(--white);
+    position: absolute;
+    top: 8rem;
+    padding: 1rem;
+}
+#section-one-text p:nth-child(1){
+    font-weight: 1000;
+    font-size:2.5rem;
+}
+#title{
+    font-size: 3.5rem;
+    font-weight:900;
+}
+#navigation{
+    background-color: var(--nav-bg);
+    padding: 0.6rem 0rem;
+}
+#navigation ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navigation ul li{
+    color: var(--li-color);
+    font-weight: 540;
+    font-size: 0.9rem;
+}
+#navigation ul li:nth-child(1){
+    color: var(--li-nth-child);
+}
+#main-section-text{
+    margin-top: 3.5rem;
+}
+#main-section-text h1{
+    color: var(--heading-2);
+    padding-bottom: 1rem;
+}
+#main-section-text p{
+    font-size: 0.8rem;
+    line-height: 2;
+}
+#main-section-text p:nth-child(2){
+    color: var(--paragraph1);
+    font-weight: 1000;
+}
+#main-section-images{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    padding: 3rem;
+    /* border: 3px solid black; */
+    /* position: relative; */
+}
+#left{
+    margin-right: 4rem;
+    background-image: url(/assets/images/thumb-1.png);
+}
+#right{
+    background-image: url(/assets/images/thumb-2.png);
+}
+.section2-images{
+    height: 9rem;
+    width: 24rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: var(--nav-bg);
+    line-height: 2;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+#sub-footer{
+    text-align: center;
+}
+#sub-footer h3{
+    font-weight: 1000;
+    color: var(--footer-h3);
+}
+#sub-footer button{
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--white);
+    color: var(--paragraph1);
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+}
+#footer-end-part{
+    background-color: var(--red);
+    text-align: center;
+    color: var(--white);
+    margin:-0.2rem;
+    padding: 0.4rem;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+    #section-one-image{
+        height: 16.8rem !important;
+        background-size: contain !important;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #section-one-image{
+        height: 23rem !important;
+    }
+    #title{
+        font-size: 3.6rem;
+    }
+    .container{
+        width: 90%;
+    }    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 25px;
+    }
+    #section-one-image{
+        height: 20rem;
+    }
+    #section-one-text{
+        position: absolute;
+        top: 6rem;
+    } 
+    .container{
+        width: 90%;
+    }  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
